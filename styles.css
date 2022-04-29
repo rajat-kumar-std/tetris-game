@@ -1,0 +1,86 @@
+*,*::before,*::after{
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+#myCanvas{
+  border: 5px solid rgb(69, 71, 69);
+  height: 40rem;
+  width: 20rem;
+}
+
+body{
+  background-color: rgb(182, 180, 180);
+  color: rgb(190, 190, 190);
+  font-weight: bolder;
+  font-family:consolas;
+  font-size: 1.5em;
+}
+
+.world{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  /* overflow: hidden; */
+}
+
+
+.sideGround{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.next-shape, .score-box, .line-box, .high-score-box{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.next-shape #nextPiece,
+.score-box #score,
+.line-box #line,
+.high-score-box #high_score
+{
+  border:5px solid rgb(69, 71, 69);
+  padding: 1rem;
+}
+
+.model{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  padding: 10rem;
+  background-color: rgba(10, 10, 10, 0.87);
+}
+
+.hide{
+  display: none;
+}
+
+.play-game{
+  margin: 1rem;
+  padding: .5rem;
+  border: 5px solid rgb(69, 71, 69);
+  border-radius: 10px;
+  color: whitesmoke;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  transition: all .3s ease-in-out;
+}
+.play-game:hover , .play-game:focus{
+  outline: 2px solid whitesmoke;
+  background-color: rgb(69, 71, 69);
+  color: rgb(204, 203, 203);
+}

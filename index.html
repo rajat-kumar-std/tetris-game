@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="./script.js" defer></script>
+  <title>Tetris</title>
+</head>
+
+<body>
+  <div class="world">
+    <div class="model">
+      <h3>
+        Controls
+      </h3>
+      <br>
+      <p>
+        LEFT / RIGHT / DOWN &rAarr; Player Movement and Resume <br><br>
+        UP &rAarr; Pause <br><br>
+        SPACE &rAarr; Player Rotate
+      </p>
+      <button onclick="startGame()" class="play-game">Start Game</button>
+    </div>
+    <div class="ground">
+      <canvas id="myCanvas"></canvas>
+    </div>
+
+    <div class="sideGround">
+      <div class="next-shape">
+        <label for="nextPiece">Next Shape</label>
+        <canvas id="nextPiece"></canvas>
+      </div>
+      <div class="score-box">
+        <label for="score">Score</label>
+        <div id="score">0</div>
+      </div>
+      <div class="line-box">
+        <label for="line">Line</label>
+        <div id="line">0</div>
+      </div>
+      <div class="high-score-box">
+        <label for="high-score">High Score</label>
+        <div id="high_score">0</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
